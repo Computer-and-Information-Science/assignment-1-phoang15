@@ -12,5 +12,8 @@ int main() {
 }
 
 unsigned int factorial (unsigned int n) {
+	static int count = 0;
+	count++;
+	cout << "Count: " << count << endl;
 	return n > 0 ? n * factorial(n - 1) : 1;
 }
