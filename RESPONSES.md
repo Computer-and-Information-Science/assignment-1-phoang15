@@ -29,6 +29,7 @@ The input that affects the number if calls is the length of the input for n. The
 n = pi, count = 5
 n = add, count = 16
 n = math, count = 65
+The function based on n is n! x e
 
 ## tower.cpp
 
