@@ -16,5 +16,8 @@ int main () {
 }
 
 unsigned int fib (unsigned int n) {
+	static int count = 0;
+	count++;
+	cout << "Count: " << count << endl;
 	return n <= 1 ? 1 : fib(n - 1) + fib(n - 2);
 }

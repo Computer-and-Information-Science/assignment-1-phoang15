@@ -10,6 +10,9 @@ using namespace std;
 // are fixed (i.e. finds all permutations of characters in positions *pos* to
 // the end of the string).
 void permute (const string& str, size_t pos) {
+	static int count = 0;
+	count++;
+	cout << "Count: " << count << endl;
 //	call_count++;
 
 	string s1 = str.substr(0, pos);		// fixed part

@@ -13,6 +13,9 @@ int main() {
 }
 
 string reverse (const string& s) {
+	static int count = 0;
+	count++;
+	cout << "Count: " << count << endl;
 	string s_reverse;
 	for (size_t i = 0; i < s.size(); i++)
 		s_reverse = s[i] + s_reverse;
