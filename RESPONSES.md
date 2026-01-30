@@ -39,7 +39,8 @@ n = 3, count = 15
 The function based on n is 2^(n+1)-1
 
 ## fibonacci2.cpp (presented in video lesson)
-
-- input/parameter impacting number of calls
-- 3 specific examples of input/parameter and number of calls
-- number of recursive calls when input/parameter is *n*
+The input that affects the number of call is n, the number that we are generating the fibonaaci numbers of.
+n = 1, count = 1 
+n = 2, count = 3
+n = 10, count = 3
+The function based on n is 1 call for n < 2 and 3 calls for n >= 2.

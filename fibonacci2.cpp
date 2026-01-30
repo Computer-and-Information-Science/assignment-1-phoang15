@@ -17,10 +17,10 @@ int main () {
 }
 
 unsigned int fib (unsigned int n) {
-	static unsigned int results[N] = { 0 };
 	static int count = 0;
 	count++;
 	cout << "Count: " << count << endl;
+	static unsigned int results[N] = { 0 };
 	if (!results[n])
 		results[n] = n <= 1 ? 1 : fib(n - 1) + fib(n - 2);
 	return results[n];
